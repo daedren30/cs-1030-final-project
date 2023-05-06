@@ -1,10 +1,80 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>My Website</title>
-    </head>
-    <body>
-        <h1>Welcome to my website!</h1>
-        <p>This is a basic webpage.</p>
-    </body>
+  <head>
+    <title>CS 1030 Final Project</title>
+
+    <style>
+      /* Set the header height to 100 pixels and make it span the full width */
+      body {
+        max-width: 100%;
+        margin: 0 auto;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-bottom: 30px;
+      }
+      header {
+        height: 100px;
+        width: 100%;
+        background: linear-gradient(to left, #87CEFA, #1560aa);
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        border: 1px solid black;
+        margin-top: 30px;
+        padding: 15px 5px 5px 5px;
+      }
+      h1 {
+        margin: 0;
+        font-size: 32px;
+        padding: 0px 0px 10px 0px;
+      }
+      h2 {
+        font-size: 24px;
+        padding: 0 10px;
+      }
+      p {
+        font-size: 20px;
+        padding: 0 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+        <h1>CS 1030 Final Project</h1>
+    </header>
+    <div class="container">
+        <center><h1>Khan Academy: Data Analysis</h1></center>
+        <hr />
+        <h2>Data Tools</h2>
+            <p>I'm somewhat familiar with these concepts already, but there's always something to learn, and Khan Academy does a good job of distilling things down to the basics. The module covered data storage, basic functions that are useful when working with datasets, and various ways to visualize data. These tools are necessary to extract insights from data, which is becoming increasingly critical in today's data-driven world.</p>
+        <h2>Big Data</h2>
+            <p>In the Big Data module, the concept of big data is introduced, including how the world is generating more data than ever before, and how that data can be used. The module also covers the challenges of big data, including how to store and process it efficiently, and how the sheer volume of data generated poses a significant challenge to today's businesses.</p>
+        <h2>Bias in Machine Learning</h2>
+            <p>The information in this module echoed come of the concepts covered in Hello World. The concept of machine learning and neural networks is introduced, as well as some common systems that have been notorious for generating biased outcomes. This helps communicate the importance of ethical considerations when using machine learning algorithms.</p>
+        <h2>Unit Test</h2>
+            <p>I actually took the unit test before I looked at the module and only missed 1 question. The unit test seems to provide a good review of the topics covered and emphasizes drawing information from data, which is essential for effective data analysis.</p>
+    </div>
+    <div class="container">
+        <center><h1>Data Analysis - Application and Presentation</h1></center>
+        <hr />
+        <h2>Question</h2>
+            <p>What are the top 10 data science jobs based on annual salary?</p>
+        <h2>Data</h2>
+            <p>To answer this question, I used the "Data Science Job Salaries" dataset from Kaggle. The dataset includes information on 606 data scientists from primarily the U.S., but also other countries. The data was aggregated from ai-jobs.net.</p>
+        <h2>Process</h2>
+            <p>After downloading the data in a CSV format, I wrote a Python script that reads the data from the CSV file into JobListing objects. The script then extracts job titles and salaries and calculates the average salary of all jobs with the same title. The bar chart was created using Matplotlib, a Python library for data visualization.</p>
+            <center><img src="code.png" alt="Top Ten Jobs" max-width="500px" height="auto"/></center>
+        <h2>Results & Analysis</h2>
+            <p>The graphic below shows the 10 highest paying job titles in data science.</p>
+            <div style="text-align: center; max-width: 800px">
+                <img src="Figure_1.png" alt="Top Ten Jobs" width="100%" height="auto"/>
+            </div>
+            <p>From the graph, it is evident that amongst the top salaries, leadership positions such as "Data Analytics Lead" and "Principle Data Scientist" receive the highest salaries, while analysts receive the lowest. Data architects and various types of data scientists fall in between.</p>
+            <p>This information suggests a hierarchy in terms of salaries within the field of data analysis. Leadership positions are at the top of the hierarchy, probably because they hold the most responsibility and require the most extensive skillset. It is also possible that the higher salaries reflect the limited pool of qualified candidates. Data architects and different types of data scientists also receive a relatively high salary, likely due to the specialized skills and knowledge required for these roles.</p>
+    </div>
+</body>
 </html>
